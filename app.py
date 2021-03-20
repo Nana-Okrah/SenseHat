@@ -10,10 +10,13 @@ app = Flask(__name__)
 def index():
 	return render_template('message.html')
 	
-@app.route('/show_messages')
-def message():
-	return render_template('message.html')
+@app.route('/show_messages',methods =["POST","GET"])
+def login():
+	if request.method == 'POST':
+		user = request.form['name', 'message']
+		return redirect(url_for('/show_message', name =user))
 
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
+
