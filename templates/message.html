@@ -7,19 +7,19 @@
 </style>
 </head>
 <body>
-<p>hello</p>
-<form action="http://0.0.0.0:5000/message", methods =['POST']></form>
-<lable for= "name"> Name:</lable>
-<br>
-<input type = "text" name ="name"> </input>
-</form>
-<br>
-<lable for="message"> Message:</lable>
-<input type = "submit" name = "message"></input>
-<br>
-<a href = "http://0.0.0.0:5000/show_messages"> <button type = "submit"></button><input type="submit" value="Submit"></a>
-</form> 
-
+<html>
+  <body style= "background-color:black;">
+	  <h1 style= "color:1ECDDE;";>Send me a message!</h1>
+     <form action = "/success" method = "post">
+        
+        <h3><lable style= "color:189CEB;">Type your Name:</lable><input type = "text" name = "name" placeholder=" Ex: Bob" /></h3>
+        
+	<h3><lable style= "color:189CEB;">Type your Message:</lable><input type = "text" name = "message" placeholder="EX: what a nice day" /></h3>
+	
+        <h5 ><input style="background-color=black;"type = "submit" value = "submit" /></h5>
+     </form>  
+  </body>
+</html>
 
 </body>
 </html>
